@@ -1,0 +1,399 @@
+@font-face {
+	font-family: "Quick Sand";
+	src: url('../fonts/Quicksand-Light.ttf') format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Quick Sand";
+	src: url('../fonts/Quicksand-Regular.ttf') format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Quick Sand";
+	src: url('../fonts/Quicksand-Medium.ttf') format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Quick Sand";
+	src: url('../fonts/Quicksand-SemiBold.ttf') format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Quick Sand";
+	src: url('../fonts/Quicksand-Bold.ttf') format("truetype");
+	font-weight: 700;
+}
+*{
+	font-family: "Quick Sand";
+	padding: 0;
+	margin: 0;
+}
+body{
+	position: relative;
+	width: 1280px;
+	height: auto;
+	margin: 0 auto;
+}
+.web{
+	position: relative;
+	margin: auto;
+	width: 1280px;
+	overflow: hidden;
+}
+
+
+.header{
+	display: flex;
+}
+
+.header .logo img{
+	height: 150px;
+	position: relative;
+}
+.header .banner img{
+	height: 150px;
+	width: 850px;
+	position: absolute;
+	right: 0;
+
+}
+nav{
+	display: flex;
+}
+nav .menu{
+	display: flex;
+}
+nav .menu .home{
+	background-color: #4c66a4;
+	z-index: 1;
+	padding: 0px 14px 10px 10px;
+	margin-top: 0px;
+}
+nav .menu .home i{
+	width: 20px;
+	height: 20px;
+	color: white;
+	
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+nav .menu .home a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+/*-----------*/
+.menu .root{
+		width: auto;
+		height: 40px;
+		background: #4c66a4;
+		margin-right: 40px;
+		margin-top: -5px;
+
+	}
+	ul.root > li {
+
+		list-style: none;
+		float: left;
+		position: relative;
+	}
+	ul.root > li > a{
+		text-decoration: none;
+		color: #fff;
+		padding: 0px 12px 0px 12px; 
+		line-height: 40px;
+		display: block;
+	}
+	ul.root > li > a:hover{
+	background-color: yellow;
+	color: red;
+	transform: ease-in 0.35s;
+	}
+	ul.submenu
+	{
+		width: 250px;
+		background: #6d136a;
+		min-height: 80px;
+		display: none;
+		position: absolute;
+	}
+	ul.submenu li
+	{
+		list-style: none;
+	}
+		ul.submenu li a
+		{
+			text-transform: none;
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			border: 1px solid #ccc;
+			line-height: 40px;
+			text-indent: 10px;
+
+		}
+		ul.root > li:hover ul.submenu{
+			display: block;
+			
+			background-color: #4c66a4;
+			color: red;
+			transform: ease-in 0.35s;
+
+		}
+		ul.submenu li a:hover{
+			background-color: yellow;
+			color: red;
+			transform: ease-in 0.35s;
+		}
+/*--------------------------------*/
+/*nav .menu ul{
+	display: flex;
+	list-style-type: none;
+	margin-top: -4px;
+}
+nav .menu li a{
+	text-decoration: none;
+	color: #337ab7;
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+nav .menu li a:hover{
+	background-color: #337ab7;
+	color: white;
+	padding: 10px 20px;
+}
+nav .menu li{
+	margin: 10px 0;
+}*/
+nav .input input{
+	width: 300px;
+	height: 25px;
+}
+nav .input a{
+	background-color: #337ab7;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+nav .input i{
+	
+	color: white;
+	width: 30px;
+	margin-left: 8px;
+}
+nav .login{
+	
+	position: absolute;
+	right: 0;
+}
+
+nav .login ul{
+	display: flex;
+	list-style-type: none;
+	margin-top: 6px;
+
+}
+nav .login img{
+	width: 20px;
+	height: 20px;
+	color: white;
+	margin-top: -4px;
+	margin-right: 10px;
+}
+nav .login ul li a{
+	text-decoration: none;
+	color: #337ab7;
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+nav .login li a:hover{
+	background-color: #8fd5ff;
+	color: white;
+	padding: 10px 20px;
+}
+main{
+	border: 1px solid #ccc;
+	width: 300px;
+	margin-top: 10px;
+	display: flex;
+}
+main .danhmuc h3{
+	color: blue;
+	background-color: #d9edf7;
+	border: 1px solid #d9edf7;
+	width: 280px;
+	height: 40px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+main a{
+	text-decoration: none;
+}
+main .danhmuc1{
+	display: flex;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main .danhmuc1 select{
+	margin-left: 20px;
+	width: 120px;
+	height: 20px;
+	font-weight: 700;
+}
+main .gia1{
+	display: flex;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main .gia1 select{
+	margin-left: 52px;
+	width: 120px;
+	height: 20px;
+	font-weight: 700;
+}
+main .gia2{
+	display: flex;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main .gia2 select{
+	margin-left: 38px;
+	width: 120px;
+	height: 20px;
+	font-weight: 700;
+}
+main .timkiem button{
+	margin-left: 100px;
+	height: 35px;
+	background-color: blue;
+	color: white;
+	font-size: 16px;
+	width: 80px;	
+	margin: 10px 100px;
+	text-align: center;
+}
+main .list{
+	margin-left: 10px;
+}
+main .list .title1{
+	background-color: #ccc;
+	height: 40px;
+	width: 970px;
+}
+main .list .title1 i{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+main .list .list_title{
+	background-color: #d9edf7;
+	height: 30px;
+	width: 970px;
+	color: blue;
+	margin-top: 10px;
+	
+}
+main .list .list_title h3{
+	margin-left: 20px;
+}
+main .list .giohang_content{
+	position: absolute;
+	border: 1px solid #ccc;
+}
+/*--------------------------------------------------------*/
+main{
+	border: 1px solid #ccc;
+}
+main .product{
+	display: flex;
+	margin-top: 20px;
+}
+main h2{
+	text-align: center;
+	margin: 20px 0;
+	color: red;
+
+}
+main .sanpham1:hover{
+	border: 1px solid #ff9900;
+}
+main .sanpham1 .stars{
+	color: yellow;
+	margin-left: 25px;
+}
+main .sanpham1 .them {
+	margin-left: 25px;
+	display: flex;
+	margin-top: 5px;
+	background-color: blue;
+	height: 30px;
+	width: 180px;
+	color: white;
+	border-radius: 5px;
+}
+main .sanpham1 .them a{
+	text-decoration: none;
+	color: white;
+
+}
+main .sanpham1 .them i{
+	margin-top: 4px;
+	margin-right: 5px; 
+}
+main .product1{
+	display: flex;
+	margin-top: 20px;
+}
+main .product2{
+	display: flex;
+	margin-top: 20px;
+}
+main .sanpham1{
+	position: relative;
+	height: 350px;
+	width: 245px;
+	border: 1px solid #ccc;
+	margin-right: 103px;
+}
+main .sanpham1:hover{
+
+}
+main .title{
+	margin-left: 25px;
+}
+main .gia{
+	margin-left: 25px;
+	
+	font-weight: 500;
+}
+footer{
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #ccc;
+	padding: 10px 0;
+}
+footer .title{
+	font-weight: 500;
+	margin-left: 20px;
+}
+footer .thanhtoan{
+	margin-left: 750px;
+}
+footer .thanhtoan img{
+	margin-top: 20px;
+}

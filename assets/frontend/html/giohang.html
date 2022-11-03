@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>gio hang</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" type="text/css" href="../css/giohang.css">
+	<!-- link fonawesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+<div .web>
+<header>
+	<div class="header">
+		<div class="logo">
+			<a href=""><img src="../images/logo3.png"></a>
+		</div>
+		<div class="banner">
+			<a href=""><img src="../images/banner2.jpg"></a>
+		</div>
+	</div>
+</header>
+<nav>
+	<div class="menu">
+		<div class="home">
+		<a href="file:///F:/H%E1%BB%8Dc%20PHP/Baicat/html/trangchu.html"><i class="fas fa-home"></i>HOME</a>
+		</div>
+		<ul>
+			<li><a href="">Mới</a></li>
+			<li><a href="">Bán chạy</a></li>
+			<li><a href="file:///F:/H%E1%BB%8Dc%20PHP/Baicat/html/sanpham.html">Điện thoại</a></li>
+			<li><a href="">Khuyến mại</a></li>
+		</ul>
+	</div>
+	<div class="input">
+		<input type="" name="" placeholder="Tìm kiếm">
+		<a href=""><i class="fas fa-search"></i></a>
+	</div>
+	<div class="login">
+		<ul>
+			<li>
+				<a href="file:///F:/H%E1%BB%8Dc%20PHP/Baicat/html/giohang.html"><i class="fas fa-shopping-cart"></i>Giỏ Hàng</a>
+			</li>
+			<li><a href="">Đăng nhập</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<div class="danhmuc">
+		<h3>Tìm kiếm</h3>
+		<div class="timkiem">
+			<div class="danhmuc1">
+				<h4>Danh mục</h4>
+					<select id="dienthoai">
+						<option value="iphone">Iphone</option>
+						<option value="samsung">Samsung</option>
+						<option value="oppo">Oppo</option>
+						<option value="huawei">Huawei</option>
+					</select>
+
+			</div>
+			<div class="gia1">
+				<h4>Giá từ</h4>
+				<select id="giatu">
+					<option value="">1.500.000</option>
+					<option value="">2.000.000</option>
+					<option value="">2.500.000</option>
+					<option value="">3.000.000</option>
+				</select>
+			</div>
+			<div class="gia2">
+				<h4>Giá đến</h4>
+				<select id="giaden">
+					<option value="">7.500.000</option>
+					<option value="">8.000.000</option>
+					<option value="">11.500.000</option>
+					<option value="">14.000.000</option>
+				</select>
+			</div>
+			<button>Tìm kiếm</button>
+		</div>
+		<a href="file:///F:/H%E1%BB%8Dc%20PHP/Baicat/html/sanpham.html"><h3> Iphone</h3></a>
+		<a href=""><h3>Samsung</h3></a>
+		<a href=""><h3>Oppo</h3></a>
+		<a href=""><h3>Huawei</h3></a>
+	</div>
+	<div class="giohang">
+		<div class="chitiet">
+			<a href=""><i class="fas fa-home"></i>Trang chủ</a>/chi tiết giỏ hàng
+		</div>
+		<div class="giohang_content" >
+			<div class="giohang_title">
+				<h3>GIỎ HÀNG</h3>
+			</div>
+			<table class="xoa"> 
+				<tr>
+					<td class="a"><h4>STT</h4></td>				
+					<td class="b"><h4>Tên sản phẩm</h4></td>
+					<td class="c"><h4>Hình ảnh</h4></td>
+					<td class="d"><h4>Số lượng</h4></td>
+					<td class="e"><h4>Thành tiền</h4></td>
+					<td class="f"><h4>Xóa</h4></td>
+					
+				</tr>
+				<tr class="action" id="ab">
+					<td>1</td>
+					<td>Samsung Galaxy A70</td>
+					<td><img src="../images/samsunggalaxya70.jpg"></td>
+
+					<td><button class="thaydoi_sl giam" data-type="down" >-</button>
+						<input type="text" name="sl_sp_2" value="1" data-price="5900000">
+						<button class="thaydoi_sl them" data-type="up">+</button>
+					</td>
+					<td><div class="total-price-product" data-total="5900000">5900000</div></td>
+					
+					<td><button class="xoa2"><i class="fas fa-trash"></i></button></td>
+				</tr>
+				<tr class="action">
+					<td>2</td>
+					<td>Huawei Mate 20</td>
+					<td><img src="../images/huaweimate20.jpg"></td>
+					<td><button class="thaydoi_sl giam" data-type="down">-</button>
+						<input type="text" name="sl_sp_2" value="1" data-price="15900000">
+						<button class="thaydoi_sl them" data-type="up">+</button>
+					</td>
+					<td><div class="total-price-product" data-total="15900000">15900000</div></td>
+					<td><button class="xoa2"><i class="fas fa-trash"></i></button></td>
+				</tr>
+				<tr class="action">
+					<td>3</td>
+					<td>iphone 11</td>
+					<td><img src="../images/iphone11.jpg"></td>
+					<td><button class="thaydoi_sl giam" data-type="down">-</button>
+						<input type="text" name="sl_sp_2" value="1" data-price="16900000">
+						<button class="thaydoi_sl them" data-type="up">+</button>
+					</td>
+					<td><div class="total-price-product" data-total="16900000">16900000</div></td>
+					<td><button class="xoa2"><i class="fas fa-trash">ddd</i></button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><h3>Tổng tiền</h3></td>
+					<td><span id="total_price_product">38700000đ đ</span></td>
+					<td><button class="xoahet">Xóa hết </button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</main>
+<footer>
+	<div class="title">
+		<h3>Cửa hàng điện thoại Ngọc Lan</h3>
+		Địa chỉ Nam Từ Liêm - Hà Nội</br>
+		Điện thoại: 0774362845</br>
+		Copyright @2021 - Design by Vũ Tuấn Điệp
+	</div>
+	<div class="thanhtoan">
+		<h3>Hỗ trợ thanh toán</h3>
+		<a href=""><img src="../images/bank.png"></a>
+	</div>
+</footer>
+</div>
+</body>
+<script src="../js/giohang.min.js"></script>
+<script type="text/javascript" src="../js/giohang.js"></script>
+</html>
